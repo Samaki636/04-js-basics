@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <h2>Simple Calculator</h2>
+
+        <script src="script.js"></script>
+
+        <div class="calculator">
+            <input type="text" id="input" value="0" placeholder="0">
+            <div class="buttons-line">
+                <button onclick="button(7)">7</button>
+                <button onclick="button(8)">8</button>
+                <button onclick="button(9)">9</button>
+                <button onclick="button('/')">÷</button>
+            </div>
+            <div class="buttons-line">
+                <button onclick="button(4)">4</button>
+                <button onclick="button(5)">5</button>
+                <button onclick="button(6)">6</button>
+                <button onclick="button('*')">x</button>
+            </div>
+            <div class="buttons-line">
+                <button onclick="button(1)">1</button>
+                <button onclick="button(2)">2</button>
+                <button onclick="button(3)">3</button>
+                <button onclick="button('-')">-</button>
+            </div>
+            <div class="buttons-line">
+                <button onclick="button('.')">.</button>
+                <button onclick="button(0)">0</button>
+                <button onclick="buttonCE()">CE</button>
+                <button onclick="button('+')">+</button>
+            </div>
+            <div class="buttons-line">
+                <button onclick="buttonEquals()" class="button-1" style="width: 92%; margin-top: 14px;">=</button>
+            </div>
+        </div>
+    </body>
+</html>
