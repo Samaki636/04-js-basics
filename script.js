@@ -45,18 +45,18 @@ function buttonCE() {
 
 function buttonEquals() {
     let input = document.getElementById('input');
-    if (input.value.indexOf('+') > -1) {
+    if (input.value.indexOf(" + ") > -1) {
         let nums = input.value.split(" + ");
-        input.value = Number(nums[0]) + Number(nums[1]);
-    } else if (input.value.indexOf('-') > -1) {
+        input.value = Decimal.sum(nums[0], nums[1]);
+    } else if (input.value.indexOf(" - ") > -1) {
         let nums = input.value.split(" - ");
-        input.value = Number(nums[0]) - Number(nums[1]);
-    } else if (input.value.indexOf('/') > -1) {
+        input.value = Decimal.sub(nums[0], nums[1]);
+    } else if (input.value.indexOf(" / ") > -1) {
         let nums = input.value.split(" / ");
-        input.value = Number(nums[0]) / Number(nums[1]);
-    } else if (input.value.indexOf('*') > -1) {
+        input.value = Decimal.div(nums[0], nums[1]);
+    } else if (input.value.indexOf(" * ") > -1) {
         let nums = input.value.split(" * ");
-        input.value = Number(nums[0]) * Number(nums[1]);
+        input.value = Decimal.mul(nums[0], nums[1]);
     }
     lastOp = '';
 }
