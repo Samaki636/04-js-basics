@@ -8,30 +8,32 @@
     <script src="libs/decimal.js"></script>
 </head>
     <body>
-        <h2>Simple Calculator</h2>
-        <br>
+        <div>
+            <h2 style="min-width: 260px;">Simple Calculator</h2>
+            <br>
 
-        <script src="script.js"></script>
+            <script src="script.js"></script>
 
-        <div class="calculator">
-            <input type="text" id="input" value="0" placeholder="0" readonly>
-            <button onclick="button(7)">7</button>
-            <button onclick="button(8)">8</button>
-            <button onclick="button(9)">9</button>
-            <button onclick="button('/')">÷</button>
-            <button onclick="button(4)">4</button>
-            <button onclick="button(5)">5</button>
-            <button onclick="button(6)">6</button>
-            <button onclick="button('*')">x</button>
-            <button onclick="button(1)">1</button>
-            <button onclick="button(2)">2</button>
-            <button onclick="button(3)">3</button>
-            <button onclick="button('-')">-</button>
-            <button onclick="button('.')">.</button>
-            <button onclick="button(0)">0</button>
-            <button onclick="buttonCE()">CE</button>
-            <button onclick="button('+')">+</button>
-            <button onclick="buttonEquals()" class="button-1">=</button>
+            <div class="calculator">
+                <div class="display" id="input">0</div>
+                <button onclick="button(7)">7</button>
+                <button onclick="button(8)">8</button>
+                <button onclick="button(9)">9</button>
+                <button onclick="button('/')">÷</button>
+                <button onclick="button(4)">4</button>
+                <button onclick="button(5)">5</button>
+                <button onclick="button(6)">6</button>
+                <button onclick="button('*')">x</button>
+                <button onclick="button(1)">1</button>
+                <button onclick="button(2)">2</button>
+                <button onclick="button(3)">3</button>
+                <button onclick="button('-')">-</button>
+                <button onclick="button('.')">.</button>
+                <button onclick="button(0)">0</button>
+                <button onclick="buttonCE()">CE</button>
+                <button onclick="button('+')">+</button>
+                <button onclick="buttonEquals()" class="button-1">=</button>
+            </div>
         </div>
     </body>
 </html>
