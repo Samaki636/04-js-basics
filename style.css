@@ -12,6 +12,7 @@ body {
     color: white;
 }
 input {
+    box-sizing: border-box;
     padding: 8px;
     margin: 5px;
     margin-bottom: 12px;
@@ -41,4 +42,6 @@ button {
 }
 .button-1 {
     background-color: #6143bf;
+    width: 92%;
+    margin-top: 14px;
 }
